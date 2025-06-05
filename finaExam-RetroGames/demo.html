@@ -1,0 +1,130 @@
+ <!-- Home page -->
+
+ <section id="hero">
+    <div id="hero-wrapper">
+      <p id="hero-intro">
+        Welcome to <span>Retro Games</span>, your ultimate destination for classic gaming! Relive the golden era
+        of video
+        games with our vast library of retro titles, spanning from 8-bit to 16-bit classics and beyond.
+      </p>
+      <a href="#" id='sign-up'>Level Up - Sign Up!</a>
+    </div>
+  </section>
+
+  <!-- Dashboard page -->
+  <h2>Games Collection</h2>
+  <section id="retro-games">
+    <!-- Display a div with information about every post (if any)-->
+    <div class="game">
+      <img src="./images/Tony Hawk's Pro Skater 2.webp" alt="example2" />
+      <div class="game-info">
+        <h3 class="game-name">Tony Hawk's Pro Skater 2</h3>
+        <p class="platform">Platform: PlayStation</p>
+        <a class="details-btn" href="#">See More</a>
+      </div>
+    </div>
+    <div class="game">
+      <img src="./images/Tetris.webp" alt="example2" />
+      <div class="game-info">
+        <h3 class="game-name">Tetris</h3>
+        <p class="platform">Platform: Game Boy</p>
+        <a class="details-btn" href="#">See More</a>
+      </div>
+    </div>
+    <div class="game">
+      <img src="./images/Gran Turismo.webp" alt="example3" />
+      <div class="game-info">
+        <h3 class="game-name">Gran Turismo</h3>
+        <p class="platform">Platform: PlayStation</p>
+        <a class="details-btn" href="#">See More</a>
+      </div>
+    </div>
+  </section>
+  <!-- Display an h2 if there are no posts -->
+  <h2 id="no-game">No retro games yet, be the first to contribute</h2>
+
+  <!-- Register Page (Only for Guest users) -->
+  <section id="register">
+    <div class="form">
+      <h2>Register</h2>
+      <form class="register-form">
+        <input type="text" name="email" id="register-email" placeholder="email" />
+        <input type="password" name="password" id="register-password" placeholder="password" />
+        <input type="password" name="re-password" id="repeat-password" placeholder="repeat password" />
+        <button type="submit">register</button>
+        <p class="message">Already registered? <a href="#">Login</a></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Login Page (Only for Guest users) -->
+  <section id="login">
+    <div class="form">
+      <h2>Login</h2>
+      <form class="login-form">
+        <input type="text" name="email" id="email" placeholder="email" />
+        <input type="password" name="password" id="password" placeholder="password" />
+        <button type="submit">login</button>
+        <p class="message">
+          Not registered? <a href="#">Create an account</a>
+        </p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Create Page (Only for logged-in users) -->
+  <section id="create">
+    <div class="form">
+      <h2>Add Retro Game</h2>
+      <form class="create-form">
+        <input type="text" name="game-name" id="game-name" placeholder="Game Name" />
+        <input type="text" name="image-url" id="image-url" placeholder="Image URL" />
+        <input type="text" name="platform" id="platform" placeholder="Platform" />
+        <textarea id="description" name="description" placeholder="Description" rows="2" cols="10"></textarea>
+        <textarea  id="release-date"  name="release-date" placeholder="Release Date"></textarea>
+        <button type="submit">Add Game</button>
+      </form>
+    </div>
+  </section>
+  <!-- Edit Page (Only for logged-in users) -->
+  <section id="edit">
+    <div class="form">
+      <h2>Edit Retro Game</h2>
+      <form class="edit-form">
+        <input type="text" name="game-name" id="game-name" placeholder="Game Name" />
+        <input type="text" name="image-url" id="image-url" placeholder="Image URL" />
+        <input type="text" name="platform" id="platform" placeholder="Platform" />
+        <textarea id="description" name="description" placeholder="Description" rows="2" cols="10"></textarea>
+        <textarea  id="release-date"  name="release-date" placeholder="Release Date"></textarea>
+        <button type="submit">Edit Game</button>
+      </form>
+    </div>
+  </section>
+<
+  <!-- Details page -->
+  <section id="details">
+    <div id="details-wrapper">
+      <img id="details-img" src="./images/Tetris.webp" alt="example1" />
+      <div>
+        <div id="info-wrapper">
+          <p id="game-details-name">Tetris</p>
+          <div id="details-description">
+            <p id="details-release-date">Release Date: July 31, 1989 (NA), October 1989 (JP), September 28, 1990 (EU)</p>
+            <p id="description">
+              Tetris is a timeless puzzle game that became a global phenomenon when it launched alongside the Game
+              Boy in 1989.
+            </p>
+          </div>
+          <h3>Game Likes:<span id="like">0</span></h3>
+          <!--Edit and Delete are only for creator-->
+          <div id="action-buttons">
+            <a href="#" id="edit-btn">Edit</a>
+            <a href="#" id="delete-btn">Delete</a>
+
+            <!--Bonus - Only for logged-in users ( not authors )-->
+            <a href="#" id="like-btn">Like</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
