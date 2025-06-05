@@ -1,0 +1,1 @@
+This is a Single Page Application (SPA) built with Lit and Page.js. It uses component-based architecture to create dynamic and reusable UI elements. Client-side routing is handled by Page.js, allowing smooth navigation without reloading the page.
